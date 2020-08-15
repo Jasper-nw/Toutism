@@ -71,15 +71,40 @@
                     </li>
                 </ul>
             </div>
-            
+            <!-- 样式标题 -->
+            <div>
+                <ul class="button">
+                    <li v-for="(v,k) of buttons" :key="k">{{v[0]}}</li>
+                </ul>
+            </div>
+            <!-- 图片及样式 -->
             <div class="road"> 
                 <ul class="road-son">
                     <li v-for="(v,k) of infos" :key="k">
                         <a href="/page"><img :src="v.img" alt=""></a>
-                        <p><a v-text="v.title" href=""></a></p>
+                        <p><a v-text="v.title" href="#"></a></p>
                     </li>
                 </ul>
             </div>
+
+            <div class="road"> 
+                <ul class="road-son">
+                    <li v-for="(v,k) of infors7" :key="k">
+                        <a href="/page"><img :src="v.img" alt=""></a>
+                        <p><a v-text="v.title" href="#"></a></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="road"> 
+                <ul class="road-son">
+                    <li v-for="(v,k) of infors6" :key="k">
+                        <a href="/page"><img :src="v.img" alt=""></a>
+                        <p><a v-text="v.title" href="#"></a></p>
+                    </li>
+                </ul>
+            </div>
+
             <div>
                 <a id="up" href="#top"><img src="../../assets/1 (15).png" alt=""></a>
             </div>
@@ -182,7 +207,14 @@
 export default {
     data(){
         return{
-            infos:[]
+            buttons:{ a:["周边旅游"],b:["国内旅游"],c:["出境旅游"],d:["团队旅游"],e:["游轮旅游"],f:["节假日旅游"]},
+               
+            
+
+
+            infos:[],
+            infors7:[],
+            infors6:[]
         }
     },
     methods:{
@@ -197,6 +229,28 @@ export default {
                 this.infos.push(item);
             });
         });
-    }
+    },
+
+    created(){
+        this.axios.get('/tour/shop?position=7').then(res=>{
+            let data=res.data;
+            console.log(data);
+            data.forEach(item=>{
+                item.img=require('../../assets/'+item.img);
+                this.infos.push(item);
+            });
+        });
+    },
+
+    created(){
+        this.axios.get('/tour/shop?position=6').then(res=>{
+            let data=res.data;
+            console.log(data);
+            data.forEach(item=>{
+                item.img=require('../../assets/'+item.img);
+                this.infos.push(item);
+            });
+        });
+    },
 }
 </script>

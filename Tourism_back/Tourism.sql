@@ -37,7 +37,7 @@ insert into shop values(0,'感恩五月大酬宾，相约红色五月泰安出�
 insert into shop values(0,'齐鲁少年战狼特训3日营|泰安暑期夏令营多少钱','','450.00','1 (15).jpg',2);
 insert into shop values(0,'泰安到微山湖红荷湿地、铁道游击队抗战小李庄踏青一日游','','78','1 (16).jpg',2);
 insert into shop values(0,'三都港 东海鲳鱼(平鱼)250g/袋 ','','380','1 (14).jpg',2);
-insert into shop values(0,'百吉福奶酪布丁蓝莓味80g','','460','1 (17).jpg',2);
+insert into shop values(0,'青岛到泰山 曲阜 济南跟团','','460','1 (17).jpg',2);
 -- 数值3为国内旅游下的商品图片位置
 insert into shop values(0,'龙脊梯田','','259.00','1 (24).jpg',3);
 insert into shop values(0,'桂林城徽象鼻山','','150.00','1 (25).jpg',3);
@@ -70,7 +70,7 @@ insert into shop values(0,'诺唯真邮轮【美国之傲号】火奴鲁鲁12日
 insert into shop values(0,'暑期到桂林阳朔、世外桃源、古东瀑布奢华高铁往返五日游','','209.00','1 (18).jpg',7);
 insert into shop values(0,'【暑假】长江水世界+葵园+乳鸽宴+亲子游','','562.00','1 (19).jpg',7);
 insert into shop values(0,'广州花之恋城堡酒店3晚+2大1小百万葵园套票【暑期特惠 入住鲜花主题城堡酒店】','','2200.00','1 (20).jpg',7);
-insert into shop values(0,'小米（MI）头戴式耳机 线控游戏音乐耳麦','','319.00','1 (21).jpg',7);
+insert into shop values(0,'八达岭长城-十三陵定陵含地下宫殿-鸟巢水立方外景','','319.00','1 (21).jpg',7);
 insert into shop values(0,'深圳欢乐谷 ','','218.00','1 (22).jpg',7);
 insert into shop values(0,'百万葵园 ','','115.00','1 (23).jpg',7);
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function show(){
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4 && xhr.status==200)
+				var r=xhr.responseText;
+			 }
+				xhr.open('get','/xz/login? uname='+abc+'&upwd='+123,true)
+				xhr.send();
+			}
+		</script>
+	</head>
+	<body>
+		用户名<input type="text" >
+		密码<input type="text" >
+		<button onclick="show()">提交</button>
+	</body>
+</html>
